@@ -39,18 +39,20 @@
 
   <div class="canvasScreen" id="fullscreen">
     <div class="buttonContainerLeft d-none" id="buttonsLeft">
-      <button onmousedown="simulateKeyPressed(37,'keydown')" onmouseup="simulateKeyPressed(37,'keyup')"
-        ontouchstart="simulateKeyPressed(37,'keydown')" ontouchend="simulateKeyPressed(37,'keyup')"><i
-          class="fa-solid fa-circle-left"></i></button>
+       <!-- 13 Enter bootle -->
+       <button onmousedown="simulateKeyPressed(13,'keydown')" onmouseup="simulateKeyPressed(13,'keyup')"
+       ontouchstart="simulateKeyPressed(13,'keydown')" ontouchend="simulateKeyPressed(13,'keyup')">
+      <img id="btnBottleIcon" src="./img/6_salsa_bottle/salsa_bottle.png"></button>
+          <!-- 32 space -->
       <button onmousedown="simulateKeyPressed(32,'keydown')" onmouseup="simulateKeyPressed(32,'keyup')"
         ontouchstart="simulateKeyPressed(32,'keydown')" ontouchend="simulateKeyPressed(32,'keyup')">
-        <i class="fa-solid fa-turn-up"></i></button>
+        <img id="jumpIcon" src="./img/10_icons/jump.png"></button>
     </div>
     <div class="flexJust">
       <div class="start-screen" id="startScreen">
         <button class="btn-style" onclick="startGame()">START GAME</button>
         <button class="btn-style" onclick="openHowToPlay()">HOW TO PLAY</button>
-        <!-- <button class="btn-style">EXAMPLE VIDEO</button> -->
+        
         <div onclick="closeHowToPlay()" id="mainHTP" class="backdrop d-none">
           <div class="how-to-play">
             <i onclick="closeHowToPlay()" class="fa-solid fa-circle-xmark top-right"></i>
@@ -90,12 +92,17 @@
       <canvas id="canvas" class="d-none" width="720" height="480"> </canvas>
     </div>
     <div class="buttonContainerRight d-none" id="buttonsRight">
+
+     
+
+       
+        <!-- 37 left arrow -->
+      <button onmousedown="simulateKeyPressed(37,'keydown')" onmouseup="simulateKeyPressed(37,'keyup')"
+      ontouchstart="simulateKeyPressed(37,'keydown')" ontouchend="simulateKeyPressed(37,'keyup')"><img id="btnArrowLeft" src="/img/10_icons/arrow.png"></button>
+         <!-- 39 arrow right -->
       <button onmousedown="simulateKeyPressed(39,'keydown')" onmouseup="simulateKeyPressed(39,'keyup')"
-        ontouchstart="simulateKeyPressed(39,'keydown')" ontouchend="simulateKeyPressed(39,'keyup')"><i
-          class="fa-solid fa-circle-right"></i></button>
-      <button onmousedown="simulateKeyPressed(13,'keydown')" onmouseup="simulateKeyPressed(13,'keyup')"
-        ontouchstart="simulateKeyPressed(13,'keydown')" ontouchend="simulateKeyPressed(13,'keyup')"><i
-          class="fa-solid fa-bottle-droplet"></i></button>
+      ontouchstart="simulateKeyPressed(39,'keydown')" ontouchend="simulateKeyPressed(39,'keyup')"><img id="btnArrowRight" src="/img/10_icons/arrow.png"></button>
+
     </div>
   </div>
 
