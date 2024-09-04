@@ -22,7 +22,7 @@ class HealthBar extends DrawableObject {
 		this.width = 200;
 		this.height = 60;
 		this.setPercentage(1000);
-		
+
 	}
 
 	/**
@@ -30,7 +30,7 @@ class HealthBar extends DrawableObject {
 	 * @param {Number} percentage - How much life has the character
 	 */
 	setPercentage(percentage) {
-		this.percentage = percentage; 
+		this.percentage = percentage;
 		let path = this.IMAGES_HEALTH[this.resolveImageIndex()];
 		this.img = this.imageCashe[path];
 	}
